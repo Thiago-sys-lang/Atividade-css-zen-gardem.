@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .page-wrapper {
+    position: relative;
+    padding: 20px;
+  }
+
+  /* Rodapé da Seção Principal */
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+    flex-wrap: wrap; /* Para tratar o caso de quebra de linha */
+  }
+
+  .footer-link {
+    flex: 1 1 100px; /* Define um tamanho flexível, mínimo de 100px */
+    text-align: center;
+    padding: 10px; /* Espaçamento interno para os links */
+    box-sizing: border-box;
+    color: #007BFF; /* Cor de destaque */
+    font-weight: bold; /* Negrito */
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    color: #0056b3; /* Tonalidade mais escura ao sobrepor */
+  }
+
+  .footer-link:visited {
+    font-weight: normal; /* Não mais em negrito ao ser visitado */
+    color: #5a5a5a; /* Tonalidade diferente ao ser visitado */
+  }
+
+  /* Seção de Benefícios */
+  .benefits {
+    display: flex;
+    border-bottom: 1px solid #ccc; /* Linha inferior */
+  }
+
+  .benefits-text {
+    flex: 7; /* 70% da largura */
+    padding: 20px;
+  }
+
+  .benefits-title {
+    flex: 3; /* 30% da largura */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    padding: 20px;
+  }
+
+  /* Seção de Participação */
+  .participation {
+    display: flex;
+    border-top: 1px solid #ccc; /* Linha superior */
+    border-bottom: 1px solid #ccc; /* Linha inferior */
+  }
+
+  .participation-item {
+    flex: 1; /* 50% do espaço disponível */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    padding: 20px;
+  }
+
+  /* Remove a borda duplicada entre as seções */
+  .benefits + .participation {
+    border-top: none;
+  }
+
+  /* Customização da Primeira Letra do Primeiro Parágrafo */
+  .main-section p:first-of-type::first-letter {
+    font-size: 3em; /* 3 vezes maior */
+    font-family: 'Courier New', Courier, monospace; /* Fonte diferente */
+    float: left; /* Flutuando à esquerda */
+    margin-right: 10px; /* Espaçamento à direita */
+    line-height: 1; /* Ajusta o espaçamento vertical */
+  }
+
+  /* Menu de Design com Separadores */
+  .menu-item {
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Borda superior */
+  }
+
+  .menu-item:last-of-type {
+    border-bottom: 1px solid #ccc; /* Borda inferior apenas no último item */
+  }
+
+  /* Painel de Explicação */
+  .explanation {
+    width: 60%; /* Ocupa 60% da largura disponível */
+    margin-right: 35%; /* Espaçamento à direita de 35% */
+    border-right: 1px solid #1f295c; /* Borda à direita */
+    padding-right: 2%; /* Espaçamento interno à direita de 2% */
+    box-sizing: border-box;
+  }
+
+  /* Menu de Designs */
+  .menu {
+    position: absolute;
+    top: 560px; /* Inicia na parte superior após a introdução */
+    left: 62%; /* Inicia após o elemento .explanation */
+    width: 35%; /* Ocupa o espaço em branco deixado por .explanation */
+    padding-left: 2%; /* Espaçamento interno horizontal de 2% */
+    padding-right: 2%; /* Espaçamento interno horizontal de 2% */
+    box-sizing: border-box;
+  }
